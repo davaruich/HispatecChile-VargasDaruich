@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%
+}
+   
+.container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    text-align: center;
+    min-height: 100%;
+}
+/* ----------------- Header ----------------- */
+header nav ul li {
+    grid-area: header;
+    background-color:white;
+    display: inline-block;
+    margin-right: 5%;
+    padding: 10px;  
+    }
+
+.logo{
+    margin-right: auto;
+    max-width: 150px;
+    max-height: 100px;
+}
+.buscar{
+    margin-left: auto ;
+    max-width: 25px;
+    max-height: 25px;
+}
+ /*----------------- Section mano ----------------- */
+.section-mano {
+    grid-area: mano;
+    box-sizing:content-box;
+    max-width: 10%;
+    max-height: 10%;
+}
+ /*----------------- Section 1 ----------------- */
+.section1 {
+    grid-area: section1;
+    background-color:white;
+}
+ /*----------------- Section 2 ----------------- */
+ .section2  {
+    grid-area: section2;
+    box-sizing:content-box;
+    background-color: white;
+ }
+  /*----------------- Section 3 ----------------- */
+.section3 {
+    grid-area: section3;
+    background-color: white;
+    color: black;
+}
+  /*----------------- Footer ----------------- */
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
+.footer article {
+    display: inline-block;
+ }
+.footer__enlace1 {
+    text-decoration: none;
+ }
+.footer__enlace2 {
+    text-decoration: none;
+}
+.footer__enlace3 {
+    text-decoration: none;
+}
+.footer__watsapp {
+       max-width: 25px;
+    max-height: 25px;
+}
+.footer__correo {
+    max-width: 25px;
+    max-height: 25px;
+} 
+
+
+.container {
+display: grid;
+gap: 10px;
+grid-template: 
+  "header"             85px
+  "mano"              770px
+  "section1"          400px
+  "section2"          400px
+  "section3"          400px
+  "footer"            200px;
+}
+<!-------------------------------------- <Responsive mobile>-------------------------------------->
+  
+.container {
+    grid template:
+    "header"             85px
+    "mano"              770px
+    "section1"          400px
+    "section2"          400px
+    "section3"          400px
+    "footer"            200px;
+}
+ 
+    
+          
+
+<!-------------------------------------- <Responsive tablet>-------------------------------------->
+
+     @media screen and (min-width:720px){
+    .container {
+        grid template:
+        "header  header" 100px
+        "mano      mano"  50px
+        "section1  section3" 100px
+        "section 3"       100px
+        "footer  footer" 100px /
+        200px auto;
+      }
+}
+<!-------------------------------------- <Desktop>-------------------------------------->
+@media screen and (min-width:1024px) {
+    .container {
+        grid template:
+        "header     header    header"  100px
+        "mano      mano         mano"  50px
+        "section1           section2" 100px
+        "section3 section3 section 3" 100px
+        "footer  footer footer"       100px /
+        200px auto;
+      }
+}
+    
