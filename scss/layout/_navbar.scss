@@ -1,0 +1,27 @@
+.logo{
+    margin-right: auto  ;
+    max-width: 150px  ;
+    max-height: 100px  ;
+}
+
+header {
+    .container {
+        display: flexbox;justify-content:right  ;
+        .navbar {
+           background-color:white  ;
+           margin-right: 5%  ;
+           padding: 10px  ;  
+           .div {
+              ul {
+                 li {
+                    a {
+                     display:flexbox  ;text-justify: distribute-all-lines   ;
+                     text-decoration: none  ;
+                     color:forestgreen  ;
+                    } 
+                  }
+                }  
+            }
+        } 
+    }
+}
