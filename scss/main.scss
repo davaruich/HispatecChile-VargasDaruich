@@ -1,16 +1,13 @@
 @import  'base/reset' ;
+@import  'base/typography'  ;
 
 @import  'layout/body'  ;
 @import  'layout/navbar'  ;
+@import  'layout/footer'  ;
 
+@import  'utils/mixins'  ;
 
-
-
-
-
-
-
-
-
-
+.card {
+    @include card  ;
+}
 
