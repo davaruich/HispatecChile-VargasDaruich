@@ -1,13 +1,27 @@
-@import  'base/reset' ;
+/*@import  'base/reset' ;*/
+
 @import  'base/typography'  ;
 
-@import  'layout/body'  ;
+
+@import  'pages/Inicio'  ;
+@import  'pages/Soluciones/SistemasyAplicaciones'  ;
+@import  'pages/Soluciones/SoftwareERPagro'  ;
+@import  'pages/Soluciones/SolucionesaMedida'  ;
+@import  'pages/CasosDeExito'  ;
+@import  'pages/Innovaciones'  ;
+@import  'pages/Contacto'  ;
+
 @import  'layout/navbar'  ;
 @import  'layout/footer'  ;
 
 @import  'utils/mixins'  ;
 
-.card {
-    @include card  ;
-}
+
+
+
+
+
+
+
+
 
